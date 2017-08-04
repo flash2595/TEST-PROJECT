@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Registration Form
+</title>
+<style type="text/css">
+.textbox
+{
+width:210px;
+border:1px solid black;
+height:25px;
+padding:3px;
+}
+td{
+margin:5px;
+}
+</style>
+</head>
+<body>
+<h1><b>Registration Form</b></h1>
+<form action="index.php" enctype="multipart/form-data" method=post>
+  First name:<br>
+  <input type="text" name="firstname" value="">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="">
+  <br>
+  <br>
+  email:<br>
+  <input type="email" name="email" value="">
+  <br><br>
+  Cover Letter:<br>
+  <input type="text" name="coverletter" value="">
+  <br><br>
+  Attachment:<br>
+  <input type="file" enctype="multipart/form-data" name="file" value="file">
+  <br>
+  <br>
+  Captcha:<br>
+  <img src="captcha.php" height="40" width="120"><input name="captcha" class="textbox" type="text" >
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+</form> 
+
+
+
+</body>
+</html>
